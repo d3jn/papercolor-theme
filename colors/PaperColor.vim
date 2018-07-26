@@ -1780,7 +1780,7 @@ fun! s:apply_syntax_highlightings()
   " PHP Highlighting
   exec 'hi phpIdentifier' . s:fg_foreground
   exec 'hi phpVarSelector' . s:fg_pink
-  exec 'hi phpKeyword' . s:fg_blue
+  exec 'hi phpKeyword' . s:fg_blue . s:ft_bold
   exec 'hi phpRepeat' . s:fg_purple . s:ft_bold
   exec 'hi phpConditional' . s:fg_purple . s:ft_bold
   exec 'hi phpStatement' . s:fg_pink
@@ -1793,6 +1793,8 @@ fun! s:apply_syntax_highlightings()
   exec 'hi phpStorageClass' . s:fg_purple . s:ft_bold
   exec 'hi phpDefine' . s:fg_navy
   exec 'hi phpIntVar' . s:fg_navy . s:ft_bold
+  exec 'hi phpParent' . s:ft_bold
+  exec 'hi phpInclude' . s:fg_blue . s:ft_bold
 
   " Perl Highlighting
   exec 'hi perlFiledescRead' . s:fg_green
